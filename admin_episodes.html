@@ -1,0 +1,143 @@
+<html>
+	
+	<head>
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Big Project Name 1 (Episodes)</title>
+		<!-- <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"> !-->
+		<link rel="stylesheet" href="assets/css/uikit.almost-flat.min.css">
+		<script src="assets/js/jquery-3.1.1.min.js"></script>
+		<script src="assets/js/uikit.min.js"></script>
+	
+	</head>
+
+	<body style="height:100%">
+		
+		<nav class="tm-navbar uk-navbar uk-navbar-attached" >
+			<div class="uk-container uk-container-center">
+				<a class="uk-navbar-brand uk-hidden-small" href="#">
+					<img class="uk-margin uk-margin-remove" src="assets/img/logo_uikit.svg" width="90" height="30">
+				</a>
+				<ul class="uk-navbar-nav uk-hidden-small">
+					<li>
+						<a href="#">Menu 1</a>
+					</li>
+					<li class="uk-active">
+						<a href="#">Menu 2</a>
+					</li>
+					<li>
+						<a href="#">Menu 3</a>
+					</li>
+					<li>
+						<a href="#">Menu 4</a>
+					</li>
+					<li>
+						<a href="#">Menu 5</a>
+					</li>
+					<li>
+						<a href="#">Menu 6</a>
+					</li>
+					<li>
+						<a href="#">Menu 7</a>
+					</li>
+				</ul>
+				<a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+				<div class="uk-navbar-brand uk-navbar-center uk-visible-small">
+					<img src="assets/img/logo_uikit.svg" width="90" height="30">
+				</div>
+			</div>
+		</nav>
+		
+		<div class="uk-grid">
+			<div class="uk-container-center tm-main uk-width-6-10">
+				<ul class="uk-breadcrumb">
+					<li><a href="admin.html">Home</a></li>
+					<li><a href="admin_projects.html">Project (Big project name)</a></li>
+					<li class="uk-active"><span>Episodes (Episode 1 - {Series / DVD})</span></li>
+				</ul>
+			</div>
+			<div class="uk-width-3-10">
+				<ul class="uk-subnav">
+					<li class="uk-badge uk-badge-danger"><span>Episodes : 1/10</span></li>
+					<li><span>	</span></li>
+					<li class="uk-badge uk-badge-warning"><span>Sequences : 80/523</span></li>
+					<li><span>	</span></li>
+					<li class="uk-badge uk-badge-success"><span>Shots : 250/1523</span></li>
+				</ul>		
+			</div>
+		</div>
+		
+		<div class="uk-grid">
+			<div class="uk-container-center tm-main">
+				<form class="uk-form">
+					<fieldset>
+						<legend>Add Episodes</legend>
+							<label class="uk-form-label" for="form-s-ip">Episode Prefix</label>
+							<input type="text" placeholder="Enter Prefix">
+							<label class="uk-form-label" for="form-s-ip">Episode Name</label>
+							<input type="text" placeholder="Enter name">
+							<label class="uk-form-label" for="form-s-ip">Number Of Episodes</label>
+							<input type="text" placeholder="Enter Number Of Shots">
+							<button class="uk-button">Add</button>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<div class="uk-container-center uk-scrollable-box uk-width-1-1" style="min-height:55%">
+			<table class="uk-table">
+				<caption>Episode Details</caption>
+				<thead>
+					<tr>
+						<th>Episodes</th>
+						<th>Sequence Tally</th>
+						<th>Status</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="uk-alert uk-alert-success">
+						<td>E020</td>
+						<td>10/150</td>
+						<td>Ongoing</td>
+					</tr>
+					<tr class="uk-alert uk-alert-success">
+						<td>E021</td>
+						<td>10/250</td>
+						<td>Ongoing</td>
+					</tr>
+					<tr class="uk-alert uk-alert-warning">
+						<td>E022</td>
+						<td>10/100</td>
+						<td>Wait</td>
+					</tr>
+					<tr class="uk-alert uk-alert-danger">
+						<td>E023</td>
+						<td>10/21</td>
+						<td>Pending</td>
+					</tr>			
+				</tbody>
+			</table>
+		</div>
+		<div class="uk-scrollable-box uk-width-1-1" style="min-height:5%">
+			<div class="uk-grid uk-container-center">
+				<div class="uk-width-2-10">
+					<button class="uk-button uk-alert-success"><a href="admin_sequences.html">Sequence Details</a></button>
+				</div>
+				<div class="uk-width-8-10">
+					<form class="uk-form">
+						<fieldset>
+							<legend>Edit Details</legend>
+								<label class="uk-form-label" for="form-s-ip">Episode Prefix</label>
+								<input type="text" placeholder="Enter Prefix">
+								<label class="uk-form-label" for="form-s-ip">Episode Name</label>
+								<input type="text" placeholder="Enter name">
+								<button class="uk-button">Edit</button>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+	
+</html>

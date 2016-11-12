@@ -1,0 +1,215 @@
+<html>
+	
+	<head>
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Big Project Name 1 (Shots Details)</title>
+		<!-- <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"> !-->
+		<link rel="stylesheet" href="assets/css/uikit.almost-flat.min.css">
+		<script src="assets/js/jquery-3.1.1.min.js"></script>
+		<script src="assets/js/uikit.min.js"></script>
+	
+	</head>
+
+	<body style="height:100%">
+		
+		<nav class="tm-navbar uk-navbar uk-navbar-attached" >
+			<div class="uk-container uk-container-center">
+				<a class="uk-navbar-brand uk-hidden-small" href="#">
+					<img class="uk-margin uk-margin-remove" src="assets/img/logo_uikit.svg" width="90" height="30">
+				</a>
+				<ul class="uk-navbar-nav uk-hidden-small">
+					<li>
+						<a href="#">Menu 1</a>
+					</li>
+					<li class="uk-active">
+						<a href="#">Menu 2</a>
+					</li>
+					<li>
+						<a href="#">Menu 3</a>
+					</li>
+					<li>
+						<a href="#">Menu 4</a>
+					</li>
+					<li>
+						<a href="#">Menu 5</a>
+					</li>
+					<li>
+						<a href="#">Menu 6</a>
+					</li>
+					<li>
+						<a href="#">Menu 7</a>
+					</li>
+				</ul>
+				<a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+				<div class="uk-navbar-brand uk-navbar-center uk-visible-small">
+					<img src="assets/img/logo_uikit.svg" width="90" height="30">
+				</div>
+			</div>
+		</nav>
+		
+		<div class="uk-grid">
+			<div class="uk-container-center tm-main uk-width-6-10">
+				<ul class="uk-breadcrumb">
+					<li><a href="admin.html">Home</a></li>
+					<li><a href="admin_projects.html">Project (Big project name)</a></li>
+					<li><a href="admin_episodes.html">Episodes (Episode 1 - {Series / DVD})</a></li>
+					<li><a href="admin_sequences.html">Sequence (Sequence 120)</a></li>
+					<li class="uk-active"><span>Shots</span></li>
+				</ul>
+			</div>
+			<div class="uk-width-3-10">
+				<ul class="uk-subnav">
+					<li class="uk-badge uk-badge-danger"><span>Episodes : 1/10</span></li>
+					<li><span>	</span></li>
+					<li class="uk-badge uk-badge-warning"><span>Sequences : 80/523</span></li>
+					<li><span>	</span></li>
+					<li class="uk-badge uk-badge-success"><span>Shots : 250/1523</span></li>
+				</ul>		
+			</div>
+		</div>
+		
+		<div class="">
+			<div class=" uk-grid uk-container-center tm-main uk-width-3-4">
+				<form class="uk-form">
+					<fieldset>
+						<legend>Add Shots</legend>
+							<label class="uk-form-label" for="form-s-ip">Shot Prefix</label>
+							<input type="text" placeholder="Enter Prefix">
+							<label class="uk-form-label" for="form-s-ip">Shot Name</label>
+							<input type="text" placeholder="Enter name">
+							<label class="uk-form-label" for="form-s-ip">Number Of Shots</label>
+							<input type="text" placeholder="Enter Number Of Shots">
+							<button class="uk-button">Add</button>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<div class="uk-grid uk-container-center uk-scrollable-box uk-width-1-1" style="min-height:40%">
+			<table class="uk-table">
+				<caption>Task Assignments</caption>
+				<thead>
+					<tr>
+						<th>Sequence</th>
+						<th>Shots</th>
+						<th>Frames</th>
+						<th>Stage</th>
+						<th>Lead</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="uk-alert uk-alert-success">
+						<td>SQ_020</td>
+						<td>SH_060</td>
+						<td>64</td>
+						<td>Layout</td>
+						<td>Unassigned</td>
+					</tr>
+					<tr class="uk-alert uk-alert-warning">
+						<td>SQ_020</td>
+						<td>SH_060</td>
+						<td>64</td>
+						<td>Layout</td>
+						<td>Deepak</td>
+					</tr>
+					<tr class="uk-alert uk-alert-warning">
+						<td>SQ_020</td>
+						<td>SH_060</td>
+						<td>64</td>
+						<td>Animation</td>
+						<td>Ali</td>
+					</tr>
+					<tr class="uk-alert uk-alert-danger">
+						<td>SQ_020</td>
+						<td>SH_060</td>
+						<td>64</td>
+						<td>Layout</td>
+						<td>Manas</td>
+					</tr>			
+				</tbody>
+			</table>
+		</div>
+		<div>
+			<div class="uk-grid uk-container-center tm-main uk-width-3-4">
+				<form class="uk-form">
+					<fieldset>
+						<legend>Edit Details</legend>
+							<label class="uk-form-label" for="form-s-ip">Shot Prefix</label>
+							<input type="text" placeholder="Enter Prefix">
+							<label class="uk-form-label" for="form-s-ip">Shot Name</label>
+							<input type="text" placeholder="Enter name">
+							<label class="uk-form-label" for="form-s-ip">Shot Frames</label>
+							<input type="text" placeholder="Enter Number">
+							<label class="uk-form-label" for="form-s-ip">Shot Stage</label>
+							<select>
+								<option>Unassigned</option>
+								<option>Pause</option>
+								<option>Asset</option>
+								<option>Layout</option>
+								<option>Blocking</option>
+								<option>Animation</option>
+								<option>Caching</option>
+								<option>Lighting</option>
+								<option>Render</option>
+								<option>Compilation</option>
+							</select>
+							<label class="uk-form-label" for="form-s-ip">Shot Lead</label>
+							<select>
+								<option>Ali</option>
+								<option>Deepak</option>
+							</select>
+							<button class="uk-button">Edit</button>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<div class="uk-scrollable-box uk-width-1-1" style="min-height:32%">
+			<article class="uk-comment uk-comment-primary">
+				<header class="uk-comment-header">
+					<img class="uk-comment-avatar" src="assets/img/placeholder_avatar.svg" width="50" height="50" alt="">
+					<h4 class="uk-comment-title">Revision 3</h4>
+					<div class="uk-comment-meta">Filename : 105_060_020 | Upload Date : 01-02-16 | Feedback Date : 02-02-16 | Feedback File | Link</div>
+					<div class="uk-width-medium-1-1">
+						<div class="uk-panel uk-panel-box uk-text-break">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt. Lorem ipsum dolor sit amet, consetetur sadipscing elit</div>
+					</div>
+					<button class="uk-button-success" type="button">Acknowledge</button>
+				</header>
+			</article>
+			<article class="uk-comment">
+				<header class="uk-comment-header">
+					<img class="uk-comment-avatar" src="assets/img/placeholder_avatar.svg" width="50" height="50" alt="">
+					<h4 class="uk-comment-title">Revision 2</h4>
+					<div class="uk-comment-meta">Filename : 105_060_020 | Upload Date : 01-02-16 | Feedback Date : 02-02-16 | Feedback File | Link</div>
+					<div class="uk-width-medium-1-1">
+						<div class="uk-panel uk-panel-box uk-text-break">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt. Lorem ipsum dolor sit amet, consetetur sadipscing elit</div>
+					</div>
+					<input type="text" placeholder="Enter Directory Link" class="uk-form-width-large">
+					<button class="uk-button-danger">Confirm Upload</button>
+				</header>
+			</article>
+			<article class="uk-comment">
+				<header class="uk-comment-header">
+					<img class="uk-comment-avatar" src="assets/img/placeholder_avatar.svg" width="50" height="50" alt="">
+					<h4 class="uk-comment-title">Revision 1</h4>
+					<div class="uk-comment-meta">Filename : 105_060_020 | Upload Date : 01-02-16 | Feedback Date : 02-02-16 | Feedback File | Link</div>
+					<div class="uk-width-medium-1-1">
+						<div class="uk-panel uk-panel-box uk-text-break">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt. Lorem ipsum dolor sit amet, consetetur sadipscing elit</div>
+					</div>
+				</header>
+			</article>
+			<article class="uk-comment">
+				<header class="uk-comment-header uk-text-break">
+					<img class="uk-comment-avatar" src="assets/img/placeholder_avatar.svg" width="50" height="50" alt="">
+					<h4 class="uk-comment-title">Initial</h4>
+					<div class="uk-comment-meta">Filename : 105_060_020 | Upload Date : 01-02-16 | Feedback Date : 02-02-16 | Feedback File | Link</div>
+					<div class="uk-width-medium-1-1">
+						<div class="uk-panel uk-panel-box uk-text-break">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt. Lorem ipsum dolor sit amet, consetetur sadipscing elit</div>
+					</div>
+				</header>
+			</article>			
+		</div>		
+		
+	</body>
+	
+</html>
